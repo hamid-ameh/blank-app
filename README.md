@@ -3,7 +3,7 @@
 The official website for **Amvisphere Limited**, a British cleaning company.
 
 - **Domain:** [amvisphereltd.co.uk](https://amvisphereltd.co.uk)
-- **Email:** info@amvispherltd.co.uk
+- **Email:** info@amvisphereltd.co.uk
 - **Phone:** 07498 895296
 
 ## Structure
