@@ -5,15 +5,15 @@
    ============================================================ */
 
 :root {
-  /* Primary blues */
-  --blue: #1F60FF;
-  --blue-hover: #1A4ED8;
-  --blue-soft: #EEF3FF;
-  --blue-tint: #F7F9FF;
-  --blue-mid: #C7D6FF;
+  /* Baby-blue family */
+  --blue: #4A9FD4;
+  --blue-hover: #2E7FB0;
+  --blue-soft: #DCEEFB;
+  --blue-tint: #F2F8FD;
+  --blue-mid: #A7D8F0;
   /* Navy / ink */
-  --navy: #0E1A33;
-  --navy-deep: #06112B;
+  --navy: #0E2A47;
+  --navy-deep: #081C30;
   --ink: #1A2236;
   --muted: #5A6379;
   --line: #E4ECF6;
