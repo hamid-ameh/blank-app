@@ -67,7 +67,9 @@
         to end-of-tenancy — pop your postcode in and we'll do the rest.
       </p>
 
-      <form class="postcode-bar" data-handler="enquiry" novalidate>
+      <form class="postcode-bar" data-handler="enquiry" action="https://formspree.io/f/xeewzqdw" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New postcode enquiry — Amvisphere home hero" />
+        <input type="hidden" name="form_source" value="Home page hero (postcode bar)" />
         <div class="field">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <input type="text" name="postcode" placeholder="Enter your postcode" aria-label="Postcode" required />
@@ -374,7 +376,9 @@
       <div class="cta-band">
         <h2>Ready for a properly spotless home?</h2>
         <p>Pop in your postcode for a free, no-obligation quote — back to you within one working day.</p>
-        <form class="postcode-bar" data-handler="enquiry" novalidate>
+        <form class="postcode-bar" data-handler="enquiry" action="https://formspree.io/f/xeewzqdw" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New postcode enquiry — Amvisphere CTA band" />
+          <input type="hidden" name="form_source" value="Home page CTA band (postcode bar)" />
           <div class="field">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <input type="text" name="postcode" placeholder="Enter your postcode" aria-label="Postcode" required />
