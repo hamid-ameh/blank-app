@@ -41,7 +41,17 @@
       </a>
       <nav class="nav" id="primary-nav">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <div class="nav-item">
+          <a href="services.html">Services <span class="caret">&#9662;</span></a>
+          <div class="dropdown">
+            <a href="services.html#domestic">Domestic Cleaning</a>
+            <a href="services.html#commercial">Commercial &amp; Office</a>
+            <a href="services.html#deep">Deep &amp; Spring Cleans</a>
+            <a href="services.html#tenancy">End-of-Tenancy</a>
+            <a href="services.html#sparkle">After-Build Cleans</a>
+            <a href="services.html#carpet">Carpet &amp; Upholstery</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="areas.html">Areas</a>
         <a href="contact.html">Contact</a>
@@ -54,27 +64,56 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <span class="eyebrow">Building Better Environments</span>
-        <h1>Professional cleaning you can <span class="accent">rely on</span>, every time.</h1>
-        <p class="hero-sub">
-          Amvisphere Limited delivers spotless results for homes and businesses across the UK —
-          with DBS-checked staff, full insurance and a satisfaction guarantee behind every visit.
-        </p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary btn-lg" href="contact.html">Get a Free Quote</a>
-          <a class="btn btn-outline-light btn-lg" href="services.html">Our Services</a>
-        </div>
-        <div class="hero-trust">
-          <span><span class="star">★★★★★</span> 4.9/5 rating</span>
-          <span><span class="tick">✓</span> DBS-checked staff</span>
-          <span><span class="tick">✓</span> £5m insured</span>
-          <span><span class="tick">✓</span> Satisfaction guaranteed</span>
+  <!-- Hero slider -->
+  <section class="slider" aria-label="Highlights">
+    <div class="slide active" style="--slide-img: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80');">
+      <div class="container">
+        <div class="slide-inner">
+          <span class="eyebrow">Building Better Environments</span>
+          <h1>Professional cleaning you can <span class="accent">rely on</span>, every time.</h1>
+          <p>Spotless results for homes and businesses across the UK — DBS-checked staff, full insurance and a satisfaction guarantee behind every visit.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="contact.html">Get a Free Quote</a>
+            <a class="btn btn-outline-light btn-lg" href="services.html">Our Services</a>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="slide" style="--slide-img: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80');">
+      <div class="container">
+        <div class="slide-inner">
+          <span class="eyebrow">Commercial &amp; Office</span>
+          <h2 class="slide-title">A workplace your team is <span class="accent">proud to walk into</span>.</h2>
+          <p>Contract cleaning around your hours — offices, retail and workspaces kept pristine, day in, day out.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="services.html#commercial">Commercial Cleaning</a>
+            <a class="btn btn-outline-light btn-lg" href="contact.html">Request a Site Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="--slide-img: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');">
+      <div class="container">
+        <div class="slide-inner">
+          <span class="eyebrow">End-of-Tenancy</span>
+          <h2 class="slide-title">Move out clean. <span class="accent">Deposit back.</span> Simple.</h2>
+          <p>Inventory-grade cleans that satisfy letting agents — with a re-clean guarantee if anything gets flagged.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="services.html#tenancy">Tenancy Cleaning</a>
+            <a class="btn btn-outline-light btn-lg" href="tel:+447498895296">Call 07498 895296</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="slider-arrow prev" aria-label="Previous slide">‹</button>
+    <button class="slider-arrow next" aria-label="Next slide">›</button>
+    <div class="slider-nav">
+      <button class="slider-dot active" aria-label="Slide 1"></button>
+      <button class="slider-dot" aria-label="Slide 2"></button>
+      <button class="slider-dot" aria-label="Slide 3"></button>
     </div>
   </section>
 
@@ -82,10 +121,10 @@
   <section class="stats">
     <div class="container">
       <div class="stat-row">
-        <div class="stat-item"><strong>1,200+</strong>Homes &amp; businesses served</div>
-        <div class="stat-item"><strong>4.9 / 5</strong>Average customer rating</div>
-        <div class="stat-item"><strong>£5m</strong>Public liability cover</div>
-        <div class="stat-item"><strong>100%</strong>Satisfaction guarantee</div>
+        <div class="stat-item"><strong data-count="1200" data-suffix="+">0</strong>Homes &amp; businesses served</div>
+        <div class="stat-item"><strong data-count="4.9" data-suffix=" / 5">0</strong>Average customer rating</div>
+        <div class="stat-item"><strong data-count="5" data-suffix="m">0</strong>£ public liability cover</div>
+        <div class="stat-item"><strong data-count="100" data-suffix="%">0</strong>Satisfaction guarantee</div>
       </div>
     </div>
   </section>
@@ -100,52 +139,70 @@
       </div>
 
       <div class="services-grid">
-        <a class="service-tile" href="services.html#domestic">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12 12 3l9 9"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+        <a class="service-photo-card" href="services.html#domestic">
+          <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80');">
+            <span class="chip">Homes</span>
           </div>
-          <h3>Domestic Cleaning</h3>
-          <p>Weekly or fortnightly visits from a regular, vetted cleaner who knows your home.</p>
+          <div class="body">
+            <h3>Domestic Cleaning</h3>
+            <p>Weekly or fortnightly visits from a regular, vetted cleaner who knows your home.</p>
+            <span class="link">Learn more →</span>
+          </div>
         </a>
 
-        <a class="service-tile" href="services.html#commercial">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+        <a class="service-photo-card" href="services.html#commercial">
+          <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80');">
+            <span class="chip">Business</span>
           </div>
-          <h3>Commercial &amp; Office</h3>
-          <p>Contract cleaning for offices, retail and workspaces — done around your hours.</p>
+          <div class="body">
+            <h3>Commercial &amp; Office</h3>
+            <p>Contract cleaning for offices, retail and workspaces — done around your hours.</p>
+            <span class="link">Learn more →</span>
+          </div>
         </a>
 
-        <a class="service-tile" href="services.html#deep">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6"/><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 12v5M15 12v5"/></svg>
+        <a class="service-photo-card" href="services.html#deep">
+          <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=800&q=80');">
+            <span class="chip">Deep Clean</span>
           </div>
-          <h3>Deep &amp; Spring Cleans</h3>
-          <p>A meticulous top-to-bottom refresh that reaches the places regular cleans can't.</p>
+          <div class="body">
+            <h3>Deep &amp; Spring Cleans</h3>
+            <p>A meticulous top-to-bottom refresh that reaches the places regular cleans can't.</p>
+            <span class="link">Learn more →</span>
+          </div>
         </a>
 
-        <a class="service-tile" href="services.html#tenancy">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
+        <a class="service-photo-card" href="services.html#tenancy">
+          <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');">
+            <span class="chip">Moving</span>
           </div>
-          <h3>End-of-Tenancy</h3>
-          <p>Inventory-grade cleans that satisfy letting agents and protect your deposit.</p>
+          <div class="body">
+            <h3>End-of-Tenancy</h3>
+            <p>Inventory-grade cleans that satisfy letting agents and protect your deposit.</p>
+            <span class="link">Learn more →</span>
+          </div>
         </a>
 
-        <a class="service-tile" href="services.html#sparkle">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+        <a class="service-photo-card" href="services.html#sparkle">
+          <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80');">
+            <span class="chip">After Build</span>
           </div>
-          <h3>After-Build Cleans</h3>
-          <p>Dust, debris and paint residue cleared — handover-ready in a single visit.</p>
+          <div class="body">
+            <h3>After-Build Cleans</h3>
+            <p>Dust, debris and paint residue cleared — handover-ready in a single visit.</p>
+            <span class="link">Learn more →</span>
+          </div>
         </a>
 
-        <a class="service-tile" href="services.html#carpet">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20h14"/><path d="M7 20V8a5 5 0 0 1 10 0v12"/><path d="M9 12h6"/></svg>
+        <a class="service-photo-card" href="services.html#carpet">
+          <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=800&q=80');">
+            <span class="chip">Specialist</span>
           </div>
-          <h3>Carpet &amp; Upholstery</h3>
-          <p>Specialist treatments that lift years of wear from carpets, sofas and curtains.</p>
+          <div class="body">
+            <h3>Carpet &amp; Upholstery</h3>
+            <p>Specialist treatments that lift years of wear from carpets, sofas and curtains.</p>
+            <span class="link">Learn more →</span>
+          </div>
         </a>
       </div>
     </div>
@@ -203,6 +260,39 @@
         <div style="margin-top: 26px;">
           <a class="btn btn-primary" href="about.html">More About Us</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors -->
+  <section class="section-ink">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Sectors We Serve</span>
+        <h2>One trusted team, every environment</h2>
+        <p>Wherever people live and work, we keep the space at its best.</p>
+      </div>
+      <div class="sectors">
+        <a class="sector" href="services.html#domestic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12 12 3l9 9"/><path d="M5 10v10h14V10"/></svg>
+          <strong>Private Homes</strong>
+        </a>
+        <a class="sector" href="services.html#commercial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+          <strong>Offices</strong>
+        </a>
+        <a class="sector" href="services.html#commercial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <strong>Retail &amp; Shops</strong>
+        </a>
+        <a class="sector" href="services.html#commercial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <strong>Education</strong>
+        </a>
+        <a class="sector" href="services.html#commercial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <strong>Healthcare</strong>
+        </a>
       </div>
     </div>
   </section>
